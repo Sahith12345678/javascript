@@ -6,7 +6,24 @@
     <title>Document</title>
     <!-- ...existing code... -->
 
-    <script src="function.js"></script>
+    <script>
+      function demo() {
+        var cse = document.getElementById("name").innerHTML;
+        if (cse == "name") {
+          document.getElementById("name").innerHTML = "hello sahith";
+        } else {
+          document.getElementById("name").innerHTML = "hello sai";
+        }
+      }
+      function bgchange() {
+        document.body.style.backgroundColor = "red";
+      }
+    </script>
   </head>
-  <body></body>
+  <body>
+    <h1 id="name">hello world</h1>
+    <br />
+    <button t onclick="demo()">change text</button>
+    <button onclick="bgchange()">change background</button>
+  </body>
 </html>
